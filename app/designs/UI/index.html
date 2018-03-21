@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <link href='https://fonts.googleapis.com/css?family=Open+Sans:700,600' rel='stylesheet' type='text/css'>
+            <link rel="stylesheet" type="text/css" href="../../static/materialize/css/mycss.css">
+            
+        {% if title %}
+        <title>{{ title }} - Library</title>
+        {% else %}
+        <title>Hello Books</title>
+        {% endif %}
+    </head>
+    <body>
+        <h1>Hello, {{ user.username }}! Browse our Library</h1>
+        
+        <div class="row" > 
+                <div class="column">
+                    {% for book in books %}
+                    <div class="bookdiv" >
+                            <img src="../../static/images/book-placeholder.jpg" style="width:100%">
+                            <p>{{ book.author.username }} <br /> Book Title: <b>{{ book.title }}</b></p>
+                    </div>
+                {% endfor %}
+                </div>
+                
+                <div class="column">
+                        {% for book in books %}
+                        <div class="bookdiv" >
+                                <img src="../../static/images/book-placeholder.jpg" style="width:100%">
+                                <p>{{ book.author.username }} <br /> Book Title: <b>{{ book.title }}</b></p>
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class="column">
+                        {% for book in books %}
+                        <div class="bookdiv" >
+                                <img src="../../static/images/book-placeholder.jpg" style="width:100%">
+                                <p>{{ book.author.username }} <br /> Book Title: <b>{{ book.title }}</b></p>
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class="column">
+                        {% for book in books %}
+                        <div class="bookdiv" >
+                                <img src="../../static/images/book-placeholder.jpg" style="width:100%">
+                                <p>{{ book.author.username }} <br /> Book Title: <b>{{ book.title }}</b></p>
+                        </div>
+                    {% endfor %}
+                </div>
+
+        </div>
+    </body>
+</html>
