@@ -27,8 +27,20 @@ def index():
             'Publisher': 'MacMillan'
         }
     ]
-    return render_template('/UI/index.html', title='Home', user=user, books=books)
+    return render_template('/UI/proper.html', title='Home', user=user, books=books)
 
 @app.route('/login')
 def login():
     return render_template('UI/login.html')
+
+@app.route('/register')
+def register():
+    return render_template('UI/register.html')
+
+@app.route('/proper')
+def proper():
+    return render_template('UI/proper.html')
+
+@app.route('/base')
+def base():
+    return render_template('UI/base.html')

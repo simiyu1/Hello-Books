@@ -1,18 +1,7 @@
-<!DOCTYPE html>
-<html>
-    <head>
-            <link href='https://fonts.googleapis.com/css?family=Open+Sans:700,600' rel='stylesheet' type='text/css'>
-            <link rel="stylesheet" type="text/css" href="../../static/materialize/css/mycss.css">
-            
-        {% if title %}
-        <title>{{ title }} - Library</title>
-        {% else %}
-        <title>Hello Books</title>
-        {% endif %}
-    </head>
-    <body>
-            
-        <div class="whitener"><h1>Hello, {{ user.username }}! Browse our Library</h1></div>
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="whitener"><h1>Hello, {{ user.username }}! Browse our Library</h1></div>
         
         <div class="row" > 
                 <div class="column">
@@ -50,5 +39,4 @@
                 </div>
 
         </div>
-    </body>
-</html>
+{% endblock %}
