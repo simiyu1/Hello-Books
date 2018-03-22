@@ -3,6 +3,11 @@
     <head>
             <link href='https://fonts.googleapis.com/css?family=Open+Sans:700,600' rel='stylesheet' type='text/css'>
             <link rel="stylesheet" type="text/css" href="../../static/materialize/css/mycss.css">
+            <link type="text/css" rel="stylesheet" href="../../static/materialize/css/materialize.min.css"  media="screen,projection"/>
+            <link href="../../static/materialize/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+      
+            <!--Mobile optimization-->
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
             
         {% if title %}
         <title>{{ title }} - Library</title>
@@ -11,14 +16,30 @@
         {% endif %}
     </head>
     <body>
+            <nav class="brown " role="navigation">
+                    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
+                      <ul class="right hide-on-med-and-down">
+                        <li><a href="/index">Catalogue</a></li>
+                        <li><a href="#">History</a></li>
+                        <li><a href="/profile">My Profile</a></li>
+                      </ul>
+        
+                      <ul id="nav-mobile" class="side-nav">
+                        <li><a href="/profile">My Profile</a></li>
+                        <li><a href="/index">Catalogue</a></li>
+                        <li><a href="#">History</a></li>
+                      </ul>
+                      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+                    </div>
+            </nav>
             
-        <div class="whitener"><h1>Hello, {{ user.username }}! Browse our Library</h1></div>
+        <div class="whitener"><h3>Hello, {{ user.username }}! Browse our Library</h3></div>
         
         <div class="row" > 
                 <div class="column">
                     {% for book in books %}
                     <div class="bookdiv" >
-                        <img src="../../static/images/book-placeholder.jpg" style="width:100%">    
+                        <a href="/borrow"><img src="../../static/images/book-placeholder.jpg" style="width:100%"></a>    
                         <p>{{ book.author.username }} <br /> Book Title: <b>{{ book.title }}</b></p>
                     </div>
                 {% endfor %}
@@ -27,7 +48,7 @@
                 <div class="column">
                         {% for book in books %}
                         <div class="bookdiv" >
-                                <img src="../../static/images/book-placeholder.jpg" style="width:100%">
+                                <a href="/borrow"><img src="../../static/images/book-placeholder.jpg" style="width:100%"></a>
                                 <p>{{ book.author.username }} <br /> Book Title: <b>{{ book.title }}</b></p>
                         </div>
                     {% endfor %}
@@ -35,7 +56,7 @@
                 <div class="column">
                         {% for book in books %}
                         <div class="bookdiv" >
-                                <img src="../../static/images/book-placeholder.jpg" style="width:100%">
+                                <a href="/borrow"><img src="../../static/images/book-placeholder.jpg" style="width:100%"></a>
                                 <p>{{ book.author.username }} <br /> Book Title: <b>{{ book.title }}</b></p>
                         </div>
                     {% endfor %}
@@ -43,12 +64,17 @@
                 <div class="column">
                         {% for book in books %}
                         <div class="bookdiv" >
-                                <img src="../../static/images/book-placeholder.jpg" style="width:100%">
+                                <a href="/borrow"><img src="../../static/images/book-placeholder.jpg" style="width:100%"></a>
                                 <p>{{ book.author.username }} <br /> Book Title: <b>{{ book.title }}</b></p>
                         </div>
                     {% endfor %}
                 </div>
 
         </div>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../../static/materialize/js/materialize.min.js"></script>
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="../../static/materialize/js/materialize.js"></script>
+        <script src="../../static/materialize/js/init.js"></script>
     </body>
 </html>
