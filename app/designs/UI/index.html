@@ -19,14 +19,14 @@
             <nav class="brown " role="navigation">
                     <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
                       <ul class="right hide-on-med-and-down">
-                        <li><a href="/index">Catalogue</a></li>
+                        <li><a href="/index.html">Catalogue</a></li>
                         <li><a href="#">History</a></li>
-                        <li><a href="/profile">My Profile</a></li>
+                        <li><a href="/profile.html">My Profile</a></li>
                       </ul>
         
                       <ul id="nav-mobile" class="side-nav">
-                        <li><a href="/profile">My Profile</a></li>
-                        <li><a href="/index">Catalogue</a></li>
+                        <li><a href="/profile.html">My Profile</a></li>
+                        <li><a href="/index.html">Catalogue</a></li>
                         <li><a href="#">History</a></li>
                       </ul>
                       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -39,7 +39,7 @@
                 <div class="column">
                     {% for book in books %}
                     <div class="bookdiv" >
-                        <a href="/borrow"><img src="../../static/images/book-placeholder.jpg" style="width:100%"></a>    
+                        <a href="/borrow.html"><img src="../../static/images/book-placeholder.jpg" style="width:100%"></a>    
                         <p>{{ book.author.username }} <br /> Book Title: <b>{{ book.title }}</b></p>
                     </div>
                 {% endfor %}
@@ -48,7 +48,7 @@
                 <div class="column">
                         {% for book in books %}
                         <div class="bookdiv" >
-                                <a href="/borrow"><img src="../../static/images/book-placeholder.jpg" style="width:100%"></a>
+                                <a href="/borrow.html"><img src="../../static/images/book-placeholder.jpg" style="width:100%"></a>
                                 <p>{{ book.author.username }} <br /> Book Title: <b>{{ book.title }}</b></p>
                         </div>
                     {% endfor %}
@@ -56,7 +56,7 @@
                 <div class="column">
                         {% for book in books %}
                         <div class="bookdiv" >
-                                <a href="/borrow"><img src="../../static/images/book-placeholder.jpg" style="width:100%"></a>
+                                <a href="/borrow.html"><img src="../../static/images/book-placeholder.jpg" style="width:100%"></a>
                                 <p>{{ book.author.username }} <br /> Book Title: <b>{{ book.title }}</b></p>
                         </div>
                     {% endfor %}
@@ -64,7 +64,7 @@
                 <div class="column">
                         {% for book in books %}
                         <div class="bookdiv" >
-                                <a href="/borrow"><img src="../../static/images/book-placeholder.jpg" style="width:100%"></a>
+                                <a href="/borrow.html"><img src="../../static/images/book-placeholder.jpg" style="width:100%"></a>
                                 <p>{{ book.author.username }} <br /> Book Title: <b>{{ book.title }}</b></p>
                         </div>
                     {% endfor %}
