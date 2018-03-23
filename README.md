@@ -42,7 +42,30 @@ A. Locally
 B. In Git Pages
     Launch your browser and go to the URL https://simiyu1.github.io/Hello-Books/ . From there you can navigate either into the Admin template by clicking on the admin button or the client side by clicking the client button. No Username or password will be asked.
     
+Screen shots
+
+Here are a few screenshots of what to expect.
+A. Login
+![alt text](screenshots/loginpage.png "The login page")
+
+B. Client page
+![alt text](screenshots/client.png "The client page")
+
+C. Client Views borrowed books
+![alt text](screenshots/borrowed.png "View borrowed books")
+
+D. Admin page
+![alt text](screenshots/admin.png "The admin page")
+
+E. Admin views all borrowed
+![alt text](screenshots/adminborrowed.png "all borrowed books")
+
+F. Admin Profile page
+![alt text](screenshots/adminborrowed.png "Profile page")
+    
  Contributions:
  Given the nature of this project. I cannot accept any contributions to it however, edit sugestions on the design are highly welcome. You may clone and use this project as you wish in any manner as long as you are within the bounds of the law.
+ 
+ 
        
 
