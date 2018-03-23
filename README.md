@@ -47,27 +47,27 @@ Screen shots
 Here are a few screenshots of what to expect.
 A. Login
 
-![alt text](screenshots/loginpage.png "The login page")
+![alt text](screenshots/loginpage.PNG "The login page")
 
 B. Client page
 
-![alt text](screenshots/client.png "The client page")
+![alt text](screenshots/client.PNG "The client page")
 
 C. Client Views borrowed books
 
-![alt text](screenshots/borrowed.png "View borrowed books")
+![alt text](screenshots/borrowed.PNG "View borrowed books")
 
 D. Admin page
 
-![alt text](screenshots/admin.png "The admin page")
+![alt text](screenshots/admin.PNG "The admin page")
 
 E. Admin views all borrowed
 
-![alt text](screenshots/adminborrowed.png "all borrowed books")
+![alt text](screenshots/adminborrowed.PNG "all borrowed books")
 
 F. Admin Profile page
 
-![alt text](screenshots/adminborrowed.png "Profile page")
+![alt text](screenshots/adminborrowed.PNG "Profile page")
     
  Contributions:
  Given the nature of this project. I cannot accept any contributions to it however, edit sugestions on the design are highly welcome. You may clone and use this project as you wish in any manner as long as you are within the bounds of the law.
