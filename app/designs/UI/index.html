@@ -9,65 +9,53 @@
             <!--Mobile optimization-->
             <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
             
-        {% if title %}
-        <title>{{ title }} - Library</title>
-        {% else %}
-        <title>Hello Books</title>
-        {% endif %}
+        <title>Hello- Library</title>
     </head>
     <body>
             <nav class="brown " role="navigation">
-                    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
+                    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Library</a>
                       <ul class="right hide-on-med-and-down">
-                        <li><a href="/index.html">Catalogue</a></li>
+                        <li><a href="index.html">Catalogue</a></li>
                         <li><a href="#">History</a></li>
-                        <li><a href="/profile.html">My Profile</a></li>
+                        <li><a href="profile.html">My Profile</a></li>
                       </ul>
         
                       <ul id="nav-mobile" class="side-nav">
-                        <li><a href="/profile.html">My Profile</a></li>
-                        <li><a href="/index.html">Catalogue</a></li>
+                        <li><a href="profile.html">My Profile</a></li>
+                        <li><a href="index.html">Catalogue</a></li>
                         <li><a href="#">History</a></li>
                       </ul>
                       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
                     </div>
             </nav>
             
-        <div class="whitener"><h3>Hello, {{ user.username }}! Browse our Library</h3></div>
+        <div class="whitener"><h3>Hello, Guest! Browse our Library</h3></div>
         
         <div class="row" > 
                 <div class="column">
-                    {% for book in books %}
                     <div class="bookdiv" >
-                        <a href="/borrow.html"><img src="../../static/images/book-placeholder.jpg" style="width:100%"></a>    
-                        <p>{{ book.author.username }} <br /> Book Title: <b>{{ book.title }}</b></p>
+                        <a href="borrow.html"><img src="../../static/images/book-placeholder.jpg" style="width:100%"></a>    
+                        <p>Bailey Rotellier <br /> Book Title: <b> The Long Road Home</b></p>
                     </div>
-                {% endfor %}
                 </div>
                 
                 <div class="column">
-                        {% for book in books %}
                         <div class="bookdiv" >
-                                <a href="/borrow.html"><img src="../../static/images/book-placeholder.jpg" style="width:100%"></a>
-                                <p>{{ book.author.username }} <br /> Book Title: <b>{{ book.title }}</b></p>
+                                <a href="borrow.html"><img src="../../static/images/book-placeholder.jpg" style="width:100%"></a>
+                                <p>Carlotie Bentely <br /> Book Title: <b>Green grass</b></p>
                         </div>
-                    {% endfor %}
                 </div>
                 <div class="column">
-                        {% for book in books %}
                         <div class="bookdiv" >
-                                <a href="/borrow.html"><img src="../../static/images/book-placeholder.jpg" style="width:100%"></a>
-                                <p>{{ book.author.username }} <br /> Book Title: <b>{{ book.title }}</b></p>
+                                <a href="borrow.html"><img src="../../static/images/book-placeholder.jpg" style="width:100%"></a>
+                                <p>Riley Roberts <br /> Book Title: <b>Kinky tales</b></p>
                         </div>
-                    {% endfor %}
                 </div>
                 <div class="column">
-                        {% for book in books %}
                         <div class="bookdiv" >
-                                <a href="/borrow.html"><img src="../../static/images/book-placeholder.jpg" style="width:100%"></a>
-                                <p>{{ book.author.username }} <br /> Book Title: <b>{{ book.title }}</b></p>
+                                <a href="borrow.html"><img src="../../static/images/book-placeholder.jpg" style="width:100%"></a>
+                                <p>Pickely Ritchey <br /> Book Title: <b>Broken glass</b></p>
                         </div>
-                    {% endfor %}
                 </div>
 
         </div>
