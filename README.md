@@ -46,21 +46,27 @@ Screen shots
 
 Here are a few screenshots of what to expect.
 A. Login
+
 ![alt text](screenshots/loginpage.png "The login page")
 
 B. Client page
+
 ![alt text](screenshots/client.png "The client page")
 
 C. Client Views borrowed books
+
 ![alt text](screenshots/borrowed.png "View borrowed books")
 
 D. Admin page
+
 ![alt text](screenshots/admin.png "The admin page")
 
 E. Admin views all borrowed
+
 ![alt text](screenshots/adminborrowed.png "all borrowed books")
 
 F. Admin Profile page
+
 ![alt text](screenshots/adminborrowed.png "Profile page")
     
  Contributions:
